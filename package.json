@@ -1,0 +1,18 @@
+{
+  "name": "kosaka",
+  "version": "0.1.0",
+  "description": "Voice Changer - Kosaka understands your voice and speaks on your behalf.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "semistandard --fix app/*.js",
+    "start": "node index.js"
+  },
+  "author": "orleika <admin@orleika.io>",
+  "license": "MIT",
+  "dependencies": {
+    "carlo": "^0.9.45"
+  },
+  "devDependencies": {
+    "semistandard": "^13.0.1"
+  }
+}

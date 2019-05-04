@@ -1,0 +1,52 @@
+body,
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: .01rem;
+  font-size: 1rem;
+  text-justify: justify;
+  font-kerning: normal;
+  color: #333;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "palt", "kern";
+  font-feature-settings: "palt", "kern";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-soothing: grayscale;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+.wrapper {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h2 {
+  animation:
+    typing 1s steps(30, end),
+    blink-caret .5s step-end infinite;
+  border-right: .15rem solid rgba(33, 33, 33, .75);
+  margin: 0 auto;
+  overflow: hidden;
+  padding-right: .3rem;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(33, 33, 33, .75) }
+}
