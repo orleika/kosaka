@@ -3,8 +3,20 @@
   "version": "0.1.0",
   "description": "Voice Changer - Kosaka understands your voice and speaks on your behalf.",
   "main": "index.js",
+  "bin": {
+    "kosaka": "index.js"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "pkg": {
+    "assets": [
+      "app/**/*"
+    ]
+  },
   "scripts": {
     "lint": "semistandard --fix app/*.js",
+    "pkg": "pkg . --targets node10-win-x64",
     "start": "node index.js"
   },
   "author": "orleika <admin@orleika.io>",
@@ -13,6 +25,7 @@
     "carlo": "^0.9.45"
   },
   "devDependencies": {
+    "pkg": "^4.3.8",
     "semistandard": "^13.0.1"
   }
 }

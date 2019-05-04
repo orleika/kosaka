@@ -1,2 +1,4 @@
-bin
+ffmpeg
+open_jtalk
 node_modules
+*.exe

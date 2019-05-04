@@ -7,21 +7,21 @@ const carlo = require('carlo');
 const wavFile = 'output.wav';
 
 const openJtalk = path.format({
-  dir: path.join(__dirname, 'bin/open_jtalk'),
+  dir: path.join(process.cwd(), 'open_jtalk'),
   base: 'open_jtalk.exe'
 });
 
 const htsvoice = path.format({
-  dir: path.join(__dirname, 'bin/open_jtalk/mei'),
+  dir: path.join(process.cwd(), 'open_jtalk/mei'),
   base: 'mei_normal.htsvoice'
 });
 
 const dic = path.format({
-  dir: path.join(__dirname, 'bin/open_jtalk/dic')
+  dir: path.join(process.cwd(), 'open_jtalk/dic')
 });
 
 const ffplay = path.format({
-  dir: path.join(__dirname, 'bin/ffmpeg'),
+  dir: path.join(process.cwd(), 'ffmpeg'),
   base: 'ffplay.exe'
 });
 
